@@ -1,6 +1,19 @@
-const leapYears = function() {
-
+const leapYears = function(year) {
+    if(year%400 == 0){
+        alert(`${year} is a leap year!`)
+    }
+    else if(year%100 == 0){
+        alert(`${year} this is not a leap year :(`)
+    }
+    else if(year%4==0){
+        alert(`${year} this is a leap year!`)
+    }
+    else {
+        alert(`${year} is not a leap year :(`)
+    }
 };
 
-// Do not edit below this line
-module.exports = leapYears;
+let year = window.prompt("Enter a year!")
+leapYears(year)
+
+

@@ -1,5 +1,7 @@
-const removeFromArray = function() {
-};
+function remove(arr,i){
+    return arr.find(i)
+}
 
-// Do not edit below this line
-module.exports = removeFromArray;
+let arr = [1,2,3,4,5]
+console.log(arr.find((element) => elment = i))
+
